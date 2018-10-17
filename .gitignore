@@ -16,3 +16,6 @@
 ### Go Patch ###
 /vendor/
 /Godeps/
+
+# Wiki page data
+/data/pages/
