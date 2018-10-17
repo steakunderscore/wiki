@@ -63,5 +63,5 @@ func Setup() {
 
 // Run the webserver and wait for new connections
 func Run() {
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe("localhost:8080", nil))
 }
