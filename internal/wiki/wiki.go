@@ -54,12 +54,14 @@ func makeHandler(fn func(http.ResponseWriter, *http.Request, string)) http.Handl
 	}
 }
 
-func SetupRoutes() {
+// Setup the webserver
+func Setup() {
 	http.HandleFunc("/view/", makeHandler(viewHandler))
 	http.HandleFunc("/edit/", makeHandler(editHandler))
 	http.HandleFunc("/save/", makeHandler(saveHandler))
 }
 
+// Run the webserver and wait for new connections
 func Run() {
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }

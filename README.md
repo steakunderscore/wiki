@@ -20,3 +20,6 @@ If you have dlv installed
 ```
 make debug
 ```
+
+Head to [http://localhost:8080/view/home][http://localhost:8080/view/home] to
+see the app running.

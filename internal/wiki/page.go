@@ -7,7 +7,7 @@ import (
 
 var validPath = regexp.MustCompile("^/(edit|save|view)/([a-zA-Z0-9]+)$")
 
-// Wiki page
+// Page represents a wiki page with it's data
 type Page struct {
 	Title string
 	Body  []byte
