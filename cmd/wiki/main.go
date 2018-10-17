@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-	wiki.SetupRoutes()
+	wiki.Setup()
 	wiki.Run()
 }
